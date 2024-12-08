@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Шифр Виженера</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Шифр Виженера</h1>
+		<label for="key">Введите значение ключа(ключевого слова):</label>
+		<input type="text" id="key" placeholder="Введите ключ(ключевое слово)">
+
+		<p>Выберите язык:</p>
+		<label>
+      <input type="radio" name="language" value="ru" checked> Русский
+    </label>
+		<label>
+      <input type="radio" name="language" value="en"> Английский
+    </label>
+
+		<label for="inputText">Введите текст:</label>
+		<textarea id="inputText" placeholder="Введите текст"></textarea>
+
+		<div class="buttons">
+			<button onclick="encryptText()">зашифровать</button>
+			<button onclick="decryptText()">дешифровать</button>
+		</div>
+
+		<label for="result">Результат:</label>
+		<textarea id="result" readonly></textarea>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
